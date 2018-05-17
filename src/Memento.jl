@@ -3,12 +3,12 @@ __precompile__()
 module Memento
 
 using Base: StackTrace, StackFrame
-using Sockets
+# using Sockets
 using Compat
 using Compat.UUIDs
 using Compat.Dates
 
-import Syslogs
+# import Syslogs
 import JSON
 using Nullables
 
@@ -43,7 +43,7 @@ include("filters.jl")
 include("formatters.jl")
 include("handlers.jl")
 include("loggers.jl")
-include("syslog.jl")
+# include("syslog.jl")
 include("test.jl")
 include("deprecated.jl")
 

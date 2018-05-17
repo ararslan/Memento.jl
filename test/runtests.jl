@@ -5,7 +5,7 @@ using Compat.Test
 using Compat.Distributed
 using Suppressor
 using JSON
-using Syslogs
+# using Syslogs
 using Memento
 using Memento.Test
 using TestSetExtensions
@@ -24,7 +24,7 @@ files = [
     "ext/json.jl",
 ]
 
-Sys.isunix() ? push!(files, "ext/syslogs.jl") : nothing
+# Sys.isunix() ? push!(files, "ext/syslogs.jl") : nothing
 haskey(ENV, "MEMENTO_BENCHMARK") ? files = ["benchmarks.jl"] : nothing
 
 # for loggers.jl
